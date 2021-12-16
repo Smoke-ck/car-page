@@ -1,0 +1,92 @@
+.subscribe {
+    background-color: $primary-100;
+    padding: 40px 0 46px 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__input {
+        max-width: 700px;
+        height: 50px;
+    }
+    &__enter {
+        border: 1px solid $secondary-300;
+        border-radius: 15px;
+        margin-right: 10px;
+        background-color: $primary-100;
+        margin-right: 20px;
+       &::placeholder {
+        font: $button2-fonts !important;
+        color:$primary-200;
+       }
+        &:focus {
+            box-shadow: none;
+            border-color:$secondary-200;
+            background-color: $primary-100;
+            color:$primary-200;
+        }
+        &:valid {
+            border-color: #507A36;
+        }
+        &:invalid{
+            border-color: #DF4E3C;
+        }
+    }
+    &__submit {
+        background: $primary-200;
+        border-radius: 15px;
+        border-top-left-radius: 15px; 
+        border-bottom-left-radius: 0;
+        background-color: $primary-200;
+        color:$primary-100;
+        font: $button2-fonts;
+        &:hover {
+            background-color: $primary-100;
+        }
+        &:active {
+            background-color: $primary-200;
+            color:$primary-100;
+        }
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+    &__info {
+        width: 430px;
+    }
+    &__title {
+        font: $h4-fonts;
+        color: $primary-200;
+    }
+    &__description {
+        font: $p-fonts;
+        color: $primary-200;
+    }
+}
+.subscribe__input>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+}
+.subscribe__input:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+@media(max-width:1000px) {
+    .subscribe {
+        &__info {
+            text-align: center;
+            width: 100%;
+        }
+        &__container {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__input {
+            height: 30px;
+        }
+        &__submit {
+            font-size: 10px;
+        }
+    }
+}

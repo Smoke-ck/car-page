@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 1440;
+    min-width: 320px;
+    background-color: #E5E5E5;
+}
+.container  { 
+    max-width: 1240px ;
+    padding: 0 !important;
+}
+.container-fluid {
+    padding: 0 !important;
+}
+$background: #E5E5E5;
+$primary-100:#000000;
+$primary-200:#f8f8f8;
+$primary-300:#DF4E3C;
+
+$secondary-100:#AEAEAE;
+$secondary-200:#8D8D8D;
+$secondary-300:#BDBDBD;
+$secondary-400:#C4C4C4;
+$secondary-500:#ffffff;
+$secondary-600:#959595;
+$secondary-700:#507A36;
+
+$h1-fonts: 700 50px "Noto Sans Display";
+$h2-fonts: 700 50px "Poppins";
+$h3-fonts: 600 30px "Noto Sans Display";
+$h4-fonts: 600 25px "Noto Sans Display";
+$h5-fonts: 500 20px "Noto Sans Display";
+$h6-fonts: 400 17px "Noto Sans Display";
+$button1-fonts: 500 20px "Noto Sans Display";
+$button2-fonts: 400 15px "Noto Sans Display";
+$forms-fonts: 400 15px "Noto Sans Display";
+$links_fonts: 500 15px "Noto Sans Display";
+$p-fonts: 400 15px "Noto Sans Display";
+$span1-fonts: 500 20px "Noto Sans Display";
+$span2-fonts: 300 14px "Noto Sans Display";
+$check-title : 400 12px "Noto Sans Display";
+
+@import "fonts";
+@import "main";
+@import "current";
+@import "list";
+@import "subscribe";
+@import "questions";
+@import "footer";

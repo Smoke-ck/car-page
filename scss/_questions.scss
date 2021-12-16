@@ -1,0 +1,60 @@
+.questions {
+    &__container {
+        max-width: 820px;
+    }
+    padding: 120px 0 200px 0;
+    &__title {
+        font: $h2-fonts;
+        text-align: center;
+        text-transform: uppercase;
+        color: $secondary-100;
+        margin-bottom: 80px;
+    }
+}
+.accordion__card {
+    &__title {
+        font: $links_fonts;
+        &:focus {
+            box-shadow: none;
+        }
+        &:after {
+            content: url('/img/arrow/plus.svg');
+            background-image: none;
+            transition: none;
+            width: 11px;
+            height: 11px;
+        }
+        &:not(.collapsed)::after{
+            content: url('/img/arrow/plus.svg');
+            background-image: none;
+            transition: none;
+        }
+    }
+}
+.accordion__card.active{
+    padding: 24px 46px 24px 39px;
+}
+.accordion-button.accordion__card__title {
+    color:$primary-100;
+    background-color: $background;
+    border:none;
+    outline: none;
+    box-shadow: none;
+}
+.accordion-button.accordion__card__title.active{
+    color:$primary-300;
+    border-bottom: 1px solid $secondary-400;
+    font: $links_fonts;
+    color: $primary-300;
+    background-color:transparent;
+    box-shadow: none;
+    &:after {
+        content: url('/img/arrow/minus.svg');;
+        background-image: none;
+        transition: none;
+        width: 11px;
+        height: 2px;
+    } 
+}
+
+

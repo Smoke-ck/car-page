@@ -1,0 +1,22 @@
+.footer {
+    background-color:$primary-100;
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:37px 0 ;
+    }
+    &__brand {
+        width: 195px;
+    }
+}
+@media(max-width:1000px) {
+    .footer {
+        &__nav {
+            flex-direction: column;
+        }
+        &__link {
+            margin-right: 10px;
+        }
+    }
+}
